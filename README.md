@@ -9,7 +9,7 @@ Project setup script that depends on pyenv
 
 # instructions
 This script is set up to add a new project in your home directory `~/` you are free change this (just edit the PROJECT_PATH variable) as you see fit. 
-Make sure (pyenv)[https://github.com/pyenv/pyenv] is installed you can find the githup at the link. If you are on mac and have homebrew you can run:
+Make sure [pyenv](https://github.com/pyenv/pyenv) is installed you can find the githup at the link. If you are on mac and have homebrew you can run:
 ```
 brew install pyenv
 ```
@@ -29,4 +29,4 @@ os.system(
         )
         
 ```
-Right now it is configure to install (black)[https://github.com/psf/black] and (pylint)[https://github.com/PyCQA/pylint].
+Right now it is configure to install [black]([https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
