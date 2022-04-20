@@ -29,4 +29,4 @@ os.system(
         )
         
 ```
-Right now it is configure to install [python black]([https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
+Right now it is configure to install [black](https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
