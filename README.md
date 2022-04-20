@@ -1,10 +1,16 @@
 # Python-Pyenv-Project-Script
-Project setup script that depends on pyenv
+Project setup script that depends on pyenv. It asks you for a project name and then
+- creates folder with that name
+- makes a new pyenv-virtualenv with your project name
+- sets up a .python-version file in project home
+- uses pip to install black and pylint in the virtualenv
+- creates a .pylintrc file for customization in project home
 
 # requirements
 - Python 3.10.3
 - Pip 22.0.4
-- Pyenv
+- [Pyenv](https://github.com/pyenv/pyenv)
+- [Pyenv-Virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 
 
 # instructions
