@@ -1,6 +1,6 @@
 # Python-Project-Setup-Script (PPSS)
-Project setup script that depends on pyenv. It asks you for a project name and then
-- creates folder with that name
+Project setup script that depends on pyenv. It:
+- creates a new project directory (name specified by you)
 - makes a new pyenv-virtualenv with your project name
 - sets up a .python-version file in project home
 - uses pip to install black and pylint in the virtualenv
@@ -61,7 +61,7 @@ options:
 ```
 
 # customization
-You can change PROJECT_PATH to where all your python projects live.
+
 You can add more Pip instructions by adding to this line:
 
 ```
