@@ -42,6 +42,9 @@ diff ppss.py ppss
 ln -s <location_of_ppss> /usr/local/bin
 ```
 4. You can now run this script by typing `ppss` and passing arguments.
+```
+ppss -an project_name --path ~/Documents
+```
 
 # comandline options:
 
