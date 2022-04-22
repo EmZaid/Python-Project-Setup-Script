@@ -1,5 +1,6 @@
 #! /Users/Emilienne/.pyenv/shims/python
 """This is a script to set up a new python project"""
+# pyright: strict
 import os
 import subprocess
 import sys
@@ -38,7 +39,7 @@ args = parser.parse_args()
 # Checks to make sure a project name was provided. If not prompts user for one.
 if not args.name:
     project_name = input("Project Name:")
-elif args.name != "":
+else:
     project_name = args.name
 
 
