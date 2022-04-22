@@ -22,6 +22,27 @@ brew install pyenv
 Configure your shell's environment for pyenv. The instructions are on the pyenv github page. 
 This lets the .python-version change the pyenv version when you cd into the project.
 
+# creating symlink
+
+You can create a symlink that will let you execute this script from anywhere making it much more useful.
+1. git clone repository
+```
+git clone https://github.com/EmZaid/Python-Project-Setup-Script
+```
+2. make the ppss file executable. 
+```
+chmod +x ppss
+```
+Note: It is the same script just with the .py taken off. You can verify this by running:
+```
+diff ppss.py ppss
+```
+3. make the symlink:
+```
+ln -s <location_of_ppss> /usr/local/bin
+```
+4. You can now run this script by typing `ppss` and passing arguments.
+
 # comandline options:
 
 
@@ -48,6 +69,4 @@ os.system(
         )
         
 ```
-
-# creating symlink
 Right now it is configured to install [black](https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
