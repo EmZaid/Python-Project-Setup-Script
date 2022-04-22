@@ -36,6 +36,8 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+
+
 # Checks to make sure a project name was provided. If not prompts user for one.
 if not args.name:
     project_name = input("Project Name:")
@@ -45,7 +47,6 @@ else:
 
 PROJ_DIR = str(args.path)
 new_proj_path = PROJ_DIR + "/" + project_name + "/"
-print(new_proj_path)
 
 
 def create_folder():
@@ -60,12 +61,6 @@ def create_folder():
         sys.exit()
     else:
         print(f"Successfully created the directory {project_name}")
-
-
-if not args.all:
-    print("fuck this didn't work")
-elif args.all:
-    print(args.all)
 
 
 def pyenv_options():
