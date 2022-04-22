@@ -7,11 +7,6 @@ import sys
 import argparse
 from pathlib import Path
 
-# Change this to where you python projects live
-
-
-# PROJECT_PATH = "~/"
-
 
 # Refactoring to use argparse
 parser = argparse.ArgumentParser()
@@ -38,7 +33,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 
-# Checks to make sure a project name was provided. If not prompts user for one.
+# Checks to make sure a project name was provided. If not, prompt user for one.
 if not args.name:
     project_name = input("Project Name:")
 else:
@@ -75,7 +70,7 @@ def pyenv_options():
         answ = answ.lower()
 
         while answ not in accepted_answ:
-            answ = input("please enter: y/n/exit:")
+            answ = input("please enter: \ny/n/exit:")
             answ = answ.lower()
         while answ in yes_answ:
             # Creates a new virtualenv with your project name
@@ -101,11 +96,11 @@ def pyenv_local_options():
         no_answ = ["n", "no"]
 
         # This file, assuming you set up pyenv
-        answ = input("Do you want to set up a .python-version file?")
+        answ = input("Do you want to set up a .python-version file? \n y/n/exit:")
         answ = answ.lower()
 
         while answ not in accepted_answ:
-            answ = input("please enter: y/n/exit:")
+            answ = input("please enter: \ny/n/exit:")
             answ = answ.lower()
         while answ in yes_answ:
             print("Ok. Creating .python-version now:")
@@ -122,7 +117,7 @@ def pyenv_local_options():
 
 
 def pip_install():
-    """installs black and pylint and a .pylintrc file"""
+    """installs black, pylint, and a .pylintrc file"""
     if not args.all:
 
         accepted_answ = ["y", "n", "exit", "yes", "no"]
@@ -177,4 +172,4 @@ if __name__ == "__main__":
     pyenv_options()
     pyenv_local_options()
     pip_install()
-    print("project has been initated!")
+    print("Project has been initated!")
