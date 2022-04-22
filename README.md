@@ -39,7 +39,7 @@ diff ppss.py ppss
 ```
 3. make the symlink:
 ```
-ln -s <location_of_ppss> /usr/local/bin
+ln -s <location_of_ppss> /usr/local/bin/ppss
 ```
 4. You can now run this script by typing `ppss` and passing arguments.
 ```
