@@ -1,4 +1,4 @@
-# Python-Pyenv-Project-Script
+# Python-Project-Script-Setup (PPSS)
 Project setup script that depends on pyenv. It asks you for a project name and then
 - creates folder with that name
 - makes a new pyenv-virtualenv with your project name
