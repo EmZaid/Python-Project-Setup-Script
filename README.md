@@ -48,4 +48,6 @@ os.system(
         )
         
 ```
-Right now it is configure to install [black](https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
+
+# creating symlink
+Right now it is configured to install [black](https://github.com/psf/black) and [pylint](https://github.com/PyCQA/pylint).
