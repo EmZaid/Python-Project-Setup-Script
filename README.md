@@ -57,7 +57,7 @@ options:
   -a, -all             Runs full script, minimal interaction possible
                        depending on argumenst passed.
   -n NAME, -name NAME  Input your project name
-  --path PATH          Path to the python project directory
+  --path PATH          Path to the python project directory. If no path is supplied uses current working directory.
 ```
 
 # customization
