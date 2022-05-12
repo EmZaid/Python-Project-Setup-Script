@@ -66,7 +66,7 @@ You can add more Pip instructions by adding to this line (line 163 in the python
 
 ```
 160   os.system(
-161            "/Users/Emilienne/.pyenv/versions/"
+161            "~/.pyenv/versions/"
 162           + project_name
 163            + "/bin/python -m pip install black pylint"
         )
