@@ -62,13 +62,13 @@ options:
 
 # customization
 
-You can add more Pip instructions by adding to this line:
+You can add more Pip instructions by adding to this line (line 163 in the python script):
 
 ```
-os.system(
-            "/Users/Emilienne/.pyenv/versions/"
-            + project_name
-            + "/bin/python -m pip install black pylint"
+160   os.system(
+161            "/Users/Emilienne/.pyenv/versions/"
+162           + project_name
+163            + "/bin/python -m pip install black pylint"
         )
         
 ```
