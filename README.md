@@ -15,13 +15,20 @@ Project setup script that depends on pyenv. It:
 
 # instructions
 Unless specified this script will create a new python project in the directory you run this. You are able to pass a path variable with CLI if you so choose.
-Make sure [pyenv](https://github.com/pyenv/pyenv) is installed you can find the githup at the link. If you are on mac and have homebrew you can run:
+Make sure [pyenv](https://github.com/pyenv/pyenv) is installed you can find the githup at the link. If you are on Mac and have homebrew you can run:
 ```
 brew install pyenv
 ```
 Configure your shell's environment for pyenv. The instructions are on the pyenv github page. 
 This lets the .python-version change the pyenv version when you cd into the project.
 
+
+There is also a script to install pyenv and set up your shell environment [here](https://github.com/pyenv/pyenv-installer). This is linked from the offical pyenv repo. 
+
+You can find this command on their page. 
+```
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
 # creating symlink
 
 You can create a symlink that will let you execute this script from anywhere making it much more useful.
